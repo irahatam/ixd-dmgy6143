@@ -1,5 +1,9 @@
 let lot, lotharry;
 
+function preload() {
+  loadFont('ChampionGothic-Heavyweight.ttf');
+}
+
 function setup() {
   createCanvas(windowWidth,windowHeight);
 	background('#007FFF');
@@ -7,7 +11,8 @@ function setup() {
 	
 	lot = createButton('Love On Tour Harry');
 	lot.position(50,50);
-	lot.size(100,50);
+	lot.size(100,200);
+	lot.style('font-family', 'ChampionGothic-Heavyweight');
 	lot.style('font-size', '20px');
 	lot.mousePressed(mousePressed);
 }
